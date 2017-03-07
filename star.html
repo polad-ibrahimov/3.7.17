@@ -1,0 +1,44 @@
+<html>
+
+<head>
+    <title>star</title>
+</head>
+
+<body>
+
+    <!--Ekrandan girilən rəqəm ən uzun olmaq şərti ilə * olmalı ondan öncə və sonra isə *-lar 1-1 azalmalıdır.
+    Input: 5
+    Output:
+        *
+        **
+        ***
+        ****
+        *****
+        ****
+        ***
+        **
+        *-->
+
+    <script>
+        var content = '';
+        var n=Number(prompt('input 5',''));
+        for (var i = 0; i < n; i++) {
+            content = content + '*';
+            // console.log(content);
+            document.write('<br>');
+            document.write(content);
+        }
+
+        document.write('<br>');
+
+        for(var x=5; x > 1; x--){
+            for(var y = 1; y<=x-1; y++){
+                document.write('*');
+            }
+            document.write('<br>');
+        }
+    </script>
+
+</body>
+
+</html>

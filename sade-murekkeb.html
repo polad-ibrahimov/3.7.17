@@ -1,0 +1,31 @@
+<html>
+
+<head>
+    <title> 06-03-2017 </title>
+</head>
+
+<body>
+
+    <script>
+
+           function reqem(n){
+            if(n == 1){
+                return false;
+            } else if (n == 2){
+                return true;
+            }else{
+                for (var i = 2; i < n; i++){
+                    if(n % 1 == 0){
+                        return 'murekkebdir';
+                    }
+                }
+                return 'sadedir';
+            }
+           }
+           var n=Number(prompt('Reqem daxil edin',''))
+           document.write(reqem(n));
+
+    </script>
+</body>
+
+</html>
